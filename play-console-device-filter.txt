@@ -1,0 +1,39 @@
+# Google Play Console Device Filter Configuration
+# Use this configuration when uploading to Play Console to restrict to Samsung devices
+
+## Device Catalog Filters (Apply in Play Console > Release > Device Catalog):
+
+### Manufacturer Filter:
+- Include only: Samsung
+
+### Device Model Filters:
+- Galaxy S series: SM-G*
+- Galaxy Note series: SM-N*
+- Galaxy A series: SM-A*
+- Galaxy Fold series: SM-F*
+- Galaxy S series (new): SM-S*
+
+### Minimum Requirements:
+- Android API Level: 26+ (Android 8.0)
+- RAM: 3GB+
+- Camera: Required
+- Touchscreen: Required
+
+### Screen Size Support:
+- Small screens: No
+- Normal screens: Yes
+- Large screens: Yes
+- Extra large screens: Yes
+
+## Instructions for Play Console:
+1. Go to Play Console > Your App > Release Management > Device Catalog
+2. Click "Manage device compatibility"
+3. Set manufacturer filter to "Samsung" only
+4. Add device model patterns above
+5. Set minimum requirements as listed
+6. Save changes before publishing
+
+## Alternative: Upload separate APKs for different Samsung series
+- Upload Galaxy-S-optimized.apk for SM-G* devices
+- Upload Galaxy-A-optimized.apk for SM-A* devices
+- Use version codes: 100+ for S series, 200+ for A series

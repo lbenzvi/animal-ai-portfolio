@@ -1,0 +1,8 @@
+{
+  "appId": "com.animalai.identifier",
+  "appName": "Animal AI",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": true
+  }
+}

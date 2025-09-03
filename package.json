@@ -1,0 +1,27 @@
+{
+  "name": "animal-ai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lbenzvi/animal-ai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lbenzvi/animal-ai/issues"
+  },
+  "homepage": "https://github.com/lbenzvi/animal-ai#readme",
+  "dependencies": {
+    "@capacitor-community/admob": "^7.0.3",
+    "@capacitor/android": "^7.4.2",
+    "@capacitor/camera": "^7.0.2",
+    "@capacitor/cli": "^7.4.2",
+    "@capacitor/core": "^7.4.2"
+  },
+  "description": ""
+}

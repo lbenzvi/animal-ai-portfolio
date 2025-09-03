@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Samsung Galaxy device filter -->
+    <!-- This file helps restrict app availability to Samsung devices -->
+    
+    <!-- Samsung manufacturer requirement -->
+    <string-array name="samsung_devices">
+        <item>samsung</item>
+        <item>SM-G</item> <!-- Galaxy S series -->
+        <item>SM-N</item> <!-- Galaxy Note series -->
+        <item>SM-A</item> <!-- Galaxy A series -->
+        <item>SM-F</item> <!-- Galaxy Fold series -->
+        <item>SM-S</item> <!-- Galaxy S series (newer naming) -->
+    </string-array>
+</resources>
