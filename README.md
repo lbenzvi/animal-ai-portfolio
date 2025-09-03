@@ -1,39 +1,38 @@
-# Animal AI - Mobile App
+# Animal AI - Mobile Application
 
-AI-powered animal identification app built with Capacitor and deployed on Google Play Store.
+AI-powered animal identification app built with web technologies and deployed as a native Android application.
 
 ## 🚀 Features
-- Real-time animal identification from photos
-- Camera and gallery integration
-- Support for 100+ animal species
-- Detailed species information with facts
-- Offline capability for core features
+- Real-time animal identification from camera or gallery photos
+- Support for 100+ animal species with detailed information
+- Offline-capable Progressive Web App architecture
+- Native Android integration via Capacitor
 
-## 🛠 Tech Stack
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Framework**: Capacitor (Cross-platform)
-- **Build**: Android Studio, Gradle
-- **Distribution**: Google Play Console (Alpha Testing)
+## 🛠 Technology Stack
+- **Frontend**: HTML5, CSS3, Vanilla JavaScript
+- **Mobile Framework**: Capacitor 5.0
+- **Platform**: Android (iOS ready)
+- **Build System**: Gradle, Android Studio
+- **Deployment**: Google Play Console
 
-## 📱 Current Status
-- ✅ Alpha testing on Google Play Store
-- ✅ 5 active testers
-- 🔄 Preparing for production release
+## 📱 Live Status
+Currently in closed alpha testing on Google Play Store with active user testing and feedback integration.
 
-## 📂 Project Structure
-animal-ai/
-├── www/                # Web application
-│   └── index.html     # Main app interface
-├── android/           # Android native wrapper
-├── backend/           # Server endpoints
-└── capacitor.config.json
+## 🏗 Architecture
+The app uses a hybrid architecture combining web technologies with native mobile capabilities:
+- Core logic in JavaScript for cross-platform compatibility
+- Native camera and file system access through Capacitor plugins
+- Responsive design that adapts to various screen sizes
 
-## 💡 Key Learning Points
-- Cross-platform mobile development with Capacitor
-- Google Play Console deployment pipeline
-- Android app signing and versioning
-- User testing and feedback integration
+## 📸 Screenshots
+<div align="center">
+  <img src="screenshots/home-screen.png" width="250" alt="Home Screen"/>
+  <img src="screenshots/camera-capture.png" width="250" alt="Camera Capture"/>
+  <img src="screenshots/results-view.png" width="250" alt="Results View"/>
+</div>
 
-## 📝 Note
-This is a portfolio version with sensitive configurations removed for security.
-For demo access or technical discussion, please contact me.
+## 🔒 Security Note
+This repository is a portfolio demonstration with sensitive configurations and API keys removed. For a live demo or technical discussion, please contact me directly.
+
+---
+*Developed by Liam Ben-Zvi*
