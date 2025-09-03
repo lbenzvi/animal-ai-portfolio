@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+
+# Environment files
+.env
+.env.*
+backend/.env
+
+# Mac
+.DS_Store
+
+# Android Studio
+.idea/
+*.iml
+
+# Keystores
+*.keystore
+*.jks
+
+# Build files
+android/app/build/
+android/build/
