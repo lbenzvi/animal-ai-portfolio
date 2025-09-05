@@ -74,27 +74,19 @@ async function identifyAnimal() {
 }
 ```
 
-## Technical Challenges & Solutions
+## Development Highlights
 
-### Cross-Platform Camera Access
-**Challenge**: Implementing camera functionality that works seamlessly across web browsers and native mobile platforms with different permission models.
+**Making Camera Work Everywhere**  
+Building camera functionality that works identically across web browsers and native Android was trickier than expected. Different platforms handle permissions differently, and some browsers don't support camera access at all. I used Capacitor's unified API to handle the complexity, with smart fallbacks that automatically switch to file upload when native camera isn't available.
 
-**Solution**: Leveraged Capacitor's unified API layer to abstract platform differences. Implemented fallback mechanisms that gracefully degrade from native camera access to web-based file input on unsupported platforms.
+**Optimizing for Mobile Performance**  
+High-resolution photos from modern phones can be 8MB+ files, which would kill performance and data usage. I implemented client-side image compression using Canvas API that reduces file sizes by 70% while maintaining AI accuracy. The trick was finding the sweet spot between compression and image quality that the ML model needs.
 
-### Image Processing & Optimization  
-**Challenge**: Processing high-resolution camera images for AI analysis while maintaining app performance on resource-constrained mobile devices.
+**Offline Wildlife Tracking**  
+Wildlife enthusiasts often venture into areas with poor connectivity. I built the app as a Progressive Web App with aggressive caching strategies, so users can identify animals even without internet. Previously loaded species data persists locally, and photos are queued for processing when connectivity returns.
 
-**Solution**: Implemented client-side image compression and resizing before API transmission. Used Canvas API for efficient image manipulation, reducing payload size by 70% while maintaining identification accuracy.
-
-### Offline-First Architecture
-**Challenge**: Ensuring core functionality remains available without internet connectivity, essential for wildlife identification in remote locations.
-
-**Solution**: Designed Progressive Web App architecture with service worker caching strategies. Implemented local storage for user preferences and basic species information, enabling offline operation of previously loaded data.
-
-### WebView Performance Optimization
-**Challenge**: Achieving native-like performance within Android WebView environment, particularly for smooth animations and responsive UI interactions.
-
-**Solution**: Utilized CSS hardware acceleration, optimized DOM manipulations, and implemented efficient event delegation patterns. Applied backdrop-filter effects judiciously to maintain 60fps performance.
+**60fps in WebView**  
+Getting smooth animations inside Android's WebView was a real challenge. WebView performance can be inconsistent compared to native apps. I optimized by using CSS hardware acceleration strategically, minimizing DOM manipulations, and implementing efficient event patterns. The result feels as smooth as a native app.
 
 ## Security Note
 This repository is a portfolio version with sensitive configurations and API keys removed for security. The live application is currently deployed on Google Play Store in closed alpha testing. For technical discussions or demo access, please contact me at liambenzvi3@gmail.com or linkedin.com/in/liam-ben-zvi.
