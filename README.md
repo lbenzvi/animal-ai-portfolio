@@ -16,7 +16,7 @@ AI-powered animal identification app built with web technologies and deployed as
 - **Deployment**: Google Play Console
 
 ## 🎥 Demo Video
-**[📹 Click here to view the one-minute demo](./one-minute-demo.mp4)** *(Click "View raw" to download and watch)*
+**[📹 Click here to view the one-minute demo](./one-minute-demo.mp4)**
 
 ## 📱 Live Status
 Currently in closed alpha testing on Google Play Store with active user testing and feedback integration.
