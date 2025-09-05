@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animal AI - Instant Animal Identification</title>
+    
+    <!-- ========================================
+         CSS STYLES - MOBILE-FIRST RESPONSIVE DESIGN
+         - Modern CSS techniques: backdrop-filter, flexbox, animations
+         - Hardware-accelerated animations for 60fps performance
+         - Glassmorphism UI design with professional gradients
+    ======================================== -->
     <style>
         * {
             margin: 0;
@@ -541,10 +548,10 @@
     </div>
 
     <script>
+        // State management
         let currentImage = null;
         let currentResult = null;
 
-        // Debug logging
         console.log('App initialized');
         console.log('Capacitor available:', typeof window.Capacitor !== 'undefined');
         if (window.Capacitor) {
@@ -557,6 +564,7 @@
         console.log('Using API URL:', API_BASE_URL);
 
         // Handle image upload from file input
+        // File upload with client-side image optimization
         async function handleImageUpload(event) {
             const file = event.target.files[0];
             if (!file) {
@@ -586,6 +594,7 @@
         }
 
         // Capture photo using camera
+        // Cross-platform camera integration via Capacitor
         async function capturePhoto() {
             console.log('Camera button clicked');
             
@@ -673,6 +682,7 @@
         }
 
         // Identify animal
+        // AI API integration with error handling
         async function identifyAnimal() {
             if (!currentImage) {
                 showError('Please upload an image first');
