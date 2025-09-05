@@ -7,15 +7,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lbenzvi/animal-ai.git"
+    "url": "git+https://github.com/lbenzvi/animal-ai-portfolio.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "animal-identification",
+    "ai",
+    "mobile-app",
+    "capacitor",
+    "android",
+    "javascript",
+    "pwa",
+    "image-recognition",
+    "hybrid-app"
+  ],
+  "author": "Liam Ben-Zvi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lbenzvi/animal-ai/issues"
+    "url": "https://github.com/lbenzvi/animal-ai-portfolio/issues"
   },
-  "homepage": "https://github.com/lbenzvi/animal-ai#readme",
+  "homepage": "https://github.com/lbenzvi/animal-ai-portfolio#readme",
   "dependencies": {
     "@capacitor-community/admob": "^7.0.3",
     "@capacitor/android": "^7.4.2",
@@ -23,5 +33,5 @@
     "@capacitor/cli": "^7.4.2",
     "@capacitor/core": "^7.4.2"
   },
-  "description": ""
+  "description": "AI-powered mobile application for real-time animal identification using Capacitor and JavaScript"
 }
