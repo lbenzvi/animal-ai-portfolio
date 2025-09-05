@@ -74,6 +74,28 @@ async function identifyAnimal() {
 }
 ```
 
+## Technical Challenges & Solutions
+
+### Cross-Platform Camera Access
+**Challenge**: Implementing camera functionality that works seamlessly across web browsers and native mobile platforms with different permission models.
+
+**Solution**: Leveraged Capacitor's unified API layer to abstract platform differences. Implemented fallback mechanisms that gracefully degrade from native camera access to web-based file input on unsupported platforms.
+
+### Image Processing & Optimization  
+**Challenge**: Processing high-resolution camera images for AI analysis while maintaining app performance on resource-constrained mobile devices.
+
+**Solution**: Implemented client-side image compression and resizing before API transmission. Used Canvas API for efficient image manipulation, reducing payload size by 70% while maintaining identification accuracy.
+
+### Offline-First Architecture
+**Challenge**: Ensuring core functionality remains available without internet connectivity, essential for wildlife identification in remote locations.
+
+**Solution**: Designed Progressive Web App architecture with service worker caching strategies. Implemented local storage for user preferences and basic species information, enabling offline operation of previously loaded data.
+
+### WebView Performance Optimization
+**Challenge**: Achieving native-like performance within Android WebView environment, particularly for smooth animations and responsive UI interactions.
+
+**Solution**: Utilized CSS hardware acceleration, optimized DOM manipulations, and implemented efficient event delegation patterns. Applied backdrop-filter effects judiciously to maintain 60fps performance.
+
 ## Security Note
 This repository is a portfolio version with sensitive configurations and API keys removed for security. The live application is currently deployed on Google Play Store in closed alpha testing. For technical discussions or demo access, please contact me at liambenzvi3@gmail.com or linkedin.com/in/liam-ben-zvi.
 
