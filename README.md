@@ -2,6 +2,9 @@
 
 AI-powered animal identification app built with web technologies and deployed as a native Android application.
 
+## Demo Video
+**[Click here to view the one-minute demo](./one-minute-demo.mp4)**
+
 ## Features
 - **Real-time Animal Identification**: Machine learning algorithms process camera captures or gallery images to identify species
 - **Comprehensive Species Recognition**: AI system trained on extensive wildlife datasets with detailed species information including habitat, behavior, and conservation status
@@ -14,9 +17,6 @@ AI-powered animal identification app built with web technologies and deployed as
 - **Platform**: Android (iOS ready)
 - **Build System**: Gradle, Android Studio
 - **Deployment**: Google Play Console
-
-## Demo Video
-**[Click here to view the one-minute demo](./one-minute-demo.mp4)**
 
 ## Live Status
 Currently in closed alpha testing on Google Play Store with active user testing and feedback integration.
@@ -75,7 +75,7 @@ async function identifyAnimal() {
 ```
 
 ## Security Note
-This repository is a portfolio demonstration with sensitive configurations and API keys removed. For a live demo or technical discussion, please contact me directly.
+This repository is a portfolio version with sensitive configurations and API keys removed for security. The live application is currently deployed on Google Play Store in closed alpha testing. For technical discussions or demo access, please contact me at liambenzvi3@gmail.com or linkedin.com/in/liam-ben-zvi.
 
 ---
 *Developed by Liam Ben-Zvi*
