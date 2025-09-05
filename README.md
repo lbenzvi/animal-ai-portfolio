@@ -30,10 +30,10 @@ The app uses a hybrid architecture combining web technologies with native mobile
 ## 📸 Screenshots
 <div align="center">
   <img src="screenshots/home_screen.jpg" width="250" alt="Home Screen"/>
-  <img src="screenshots/new_scan.jpg" width="250" alt="New Scan"/>
   <img src="screenshots/uploaded_photo.jpg" width="250" alt="Uploaded Photo"/>
   <img src="screenshots/analyzing.jpg" width="250" alt="Analyzing"/>
   <img src="screenshots/result.jpg" width="250" alt="Result"/>
+  <img src="screenshots/new_scan.jpg" width="250" alt="New Scan"/>
 </div>
 
 ## 🔒 Security Note
